@@ -1,0 +1,32 @@
+body {
+  display: grid;
+}
+
+.half {
+  min-height: 50vh;
+}
+
+.full {
+  min-height: 100vh;
+}
+
+@media (width >= 600px) {
+  .half,
+  .full {
+    min-height: initial;
+  }
+
+  body {
+    margin: 0;
+    height: 100vh;
+    width: 100vw;
+  }
+}
+
+/*
+
+This is the equivalent with the above, and even more common
+
+@media (min-width > 600px)
+
+*/
