@@ -21,10 +21,23 @@ body {
     height: 100vh;
     width: 100vw;
     grid-template-columns: 1fr 3fr 1fr;
+
     /* grid-template-columns: 20rem 30rem; 
     /* creates 2 columns: one is 20rem, other is 30rem */
 
     grid-template-rows: 1fr 5fr 1fr;
+  }
+
+  header,
+  footer {
+    grid-column: 1 / -1;
+
+    /* -1 means go all the way across */
+  }
+
+  main {
+    grid-column: 2 / span 1;
+    grid-row: 2 / span 1;
   }
 }
 
